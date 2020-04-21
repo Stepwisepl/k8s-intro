@@ -17,5 +17,14 @@ gcloud container clusters get-credentials k8s-intro --zone europe-west1-c --proj
 
 5) Verify k8s connection:
 ```shell script 
-kubectl version
-```  
+kubectl cluster-info
+```       
+
+Sample output:
+```text 
+Kubernetes master is running at https://146.148.22.136
+GLBCDefaultBackend is running at https://146.148.22.136/api/v1/namespaces/kube-system/services/default-http-backend:http/proxy
+Heapster is running at https://146.148.22.136/api/v1/namespaces/kube-system/services/heapster/proxy
+KubeDNS is running at https://146.148.22.136/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+Metrics-server is running at https://146.148.22.136/api/v1/namespaces/kube-system/services/https:metrics-server:/proxy
+```
