@@ -16,4 +16,12 @@ kubectl get pods
 Expected output:
 ```text
 No resources found in rgrebski namespace.
-```
+```    
+
+##### 4) Get all namespaces:
+```text
+kubectl get namespaces
+```                         
+
+##### 5) See namespaces in Google Cloud Console:
+https://console.cloud.google.com/kubernetes/object/browser?authuser=1&organizationId=528753976363&project=k8s-intro-tech-tuesday
